@@ -1,0 +1,532 @@
+*
+{
+  margin: 0vw;
+  padding: 0vw;
+}
+.navbar
+{
+   width:100vw;
+   height:15vh;
+   background-color: black;
+}
+.navbar ul 
+{
+   text-decoration: none;
+   display: flex;
+   justify-content: center;  
+  
+
+}
+.navbar ul li 
+{
+   list-style: none;
+   color: white;
+   cursor: pointer;
+   margin-left: 3vw;
+   line-height: 15vh;
+}
+.main-Container
+{
+   width: 90vw;
+   height: 95vh;
+   background-color: whitesmoke;
+   box-shadow: 0 0    0.2vw  black;
+   display: flex;
+   justify-content: space-between;
+   margin: 5vw;
+   border-radius: 2vw;
+}
+.containerSection
+{
+   display: flex;
+   margin-top: 5vw;
+   
+}
+.textSection
+{
+  margin: 1vw 3vw;
+  width: 35vw;
+}
+.main-Container img
+{
+   width: 20vw;
+   height: 45vh;
+   margin-left: 15vw;  
+}
+@media (max-width:600px) {
+   .containerSection{
+      display: flex;
+      flex-direction: column;
+   }
+   .main-Container
+   {
+      height: auto;
+   }
+   .textSection
+   {
+      width: 85vw;
+   }
+   .main-Container img
+   {
+       width: 45vw;
+       height: auto;
+   }
+}
+.sub-container1
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 5vw;
+}
+.block
+{
+   width: 40vw;
+ margin-left: 3vw;
+}
+.block img
+{
+   width: 10vw;
+   height: 15vh;
+  
+}
+.projectSection
+{
+   width: 90vw;
+   height: 43vh;
+   background-color: aliceblue;
+   display: flex;
+   margin: 5vw;
+   overflow: auto;
+}
+.projectsImgs
+{
+   width: 35vw;
+   height: 40vh;
+   display: flex;
+   justify-content: space-evenly;
+}
+#projectImg
+{
+   margin: 1vw 0.3vw;
+   width: 30vw;
+   height: 35vh;
+   cursor: pointer;
+}
+.ServiceContainer
+{
+   display: flex;
+   justify-content: space-around;
+}
+.serviceText
+{
+   width: 50vw;
+}
+.serviceText button{
+   width: 10vw;
+   line-height: 2vh;
+   height: 6vh;
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   border-radius: 1vw;
+   font-size: 1.1rem;
+   cursor: pointer;
+   margin: 1vw;
+   border: 0.1vw solid red;
+}
+.serviceText button:hover
+{
+   color:rgb(53, 112, 196)
+}
+.ServiceContainer img
+{
+   width: 35vw;
+   height: 50vh;
+}
+@media (max-width:600px)
+{
+   .ServiceContainer
+   {
+      display: flex;
+      flex-direction: column;
+   }
+   .serviceText
+   {
+      width: 95vw;
+      margin: 2vw;
+   }
+   .serviceText button
+   {
+      width:20vw;
+      
+   }
+   .ServiceContainer img
+   {
+      height: auto;
+      width: auto;
+   }
+
+}
+/* App.css */
+form {
+   width: 80vw;
+   margin: auto;
+   
+   border: 1px solid #ccc;
+   border-radius: 0.5vw;
+   background-color: #f9f9f9;
+}
+
+
+input, textarea {
+   width: 80%;
+   height: 5vh;
+   border: 1px solid #ccc;
+   border-radius:0.5vw;
+   margin-left: 7vw;
+}
+label
+{
+   font-size: 1rem;
+   margin: 1vw;
+}
+
+button {
+   padding: 1vw;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 1vw;
+   cursor: pointer;
+   margin: 0.5vw 7vw;
+}
+
+.error {
+   color: red;
+   font-size: 1rem;
+}
+.footer {
+   margin-top: 5vw;
+   background-color: #333;
+   color: #fff;
+   padding: 20px 0;
+}
+
+.footer-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.footer-section {
+   flex: 1;
+   min-width: 200px;
+   margin: 10px;
+}
+
+.footer-section h3 {
+   border-bottom: 1px solid #fff;
+   padding-bottom: 10px;
+}
+
+.footer-section ul {
+   list-style: none;
+   padding: 0;
+}
+
+.footer-section ul li {
+   margin: 5px 0;
+}
+
+.footer-section a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.footer-section a:hover {
+   text-decoration: underline;
+}
+
+.footer-bottom {
+   text-align: center;
+   padding: 10px 0;
+   background-color: #222;
+   margin-top: 20px;
+}
+
+.projects {
+   max-width: 1200px; /* Maximum width of the projects section */
+   margin: 0 auto; /* Center the section horizontally */
+   padding: 20px;
+}
+
+.project {
+   text-align: center; /* Center text */
+   padding: 20px;
+  
+}
+
+.project img {
+   width: 55vw; /* Set width to 55% of the viewport width */
+   height: 55vw; /* Set height to 55% of the viewport width */
+   max-height: 55vh; /* Restrict max height to 55% of the viewport height */
+   object-fit: cover; /* Maintain aspect ratio and cover */
+   border-radius: 8px;
+   margin-left: 20vw;
+}
+
+.slick-slide {
+   display: flex; /* Flexbox for centering */
+   justify-content: center; /* Center the slide content */
+   align-items: center; /* Center items vertically */
+}
+
+.slick-list {
+   display: flex; /* Center the slides */
+   justify-content: center; /* Center the slides */
+}
+.aboutContent
+{
+   width:80vw;
+   margin: 5vw;
+}
+
+.agentProfiles {
+   padding: 2vw; /* Changed from 20px */
+   text-align: center;
+}
+ 
+.agentCards {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 2vw; /* Changed from 20px */
+   margin-top: 5vw;
+}
+ 
+.agentCard {
+   background-color: #fff;
+   border: 0.1vw solid #ddd; /* Changed from 1px */
+   border-radius: 0.5vw; /* Changed from 8px */
+   padding: 1vw; /* Reduced from 1.5vw */
+   width: 15vw; /* Changed from 20vw */
+   transition: transform 0.3s;
+   cursor: pointer;
+}
+ 
+.agentCard:hover {
+   transform: scale(1.05);
+}
+ 
+.agentCard img {
+   border-radius: 50%;
+   width: 8vw; /* Reduced from 10vw */
+   height: 8vw; /* Reduced from 10vw */
+}
+ 
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ 
+.modalContent {
+   background: #fff;
+   padding: 2vw; /* Changed from 20px */
+   border-radius: 0.5vw; /* Changed from 8px */
+   max-width: 50vw; /* Changed from 500px */
+   text-align: left;
+}
+ 
+.modalContent button {
+   margin-top: 2vw; /* Changed from 20px */
+}
+
+ @media (max-width:700px)
+ {
+   .agentCards{
+      display: flex;
+      flex-wrap: row;
+      justify-content: center;
+   }
+   .agentCard{
+      width: 45vw;
+   }
+ }
+.servicesSection {
+   padding: 5vh; /* Adjust padding using vh */
+   text-align: center;
+}
+ 
+.servicesGrid {
+   display: flex;
+   flex-wrap: nowrap; /* Change to nowrap to keep items in one line */
+   justify-content: center;
+   gap: 2vw; /* Adjust gap using vw */
+   margin-top: 2vh; /* Adjust margin using vh */
+  
+}
+ 
+.serviceCard {
+   background: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 1vw; /* Adjust border radius using vw */
+   padding: 3vh; /* Adjust padding using vh */
+   width: 15vw; /* Set width to fit on one line, adjust as needed */
+   transition: transform 0.3s;
+ }
+ 
+.serviceCard:hover {
+   transform: scale(1.05);
+}
+ 
+.serviceIcon {
+   width: 5vw; /* Adjust icon size using vw */
+   height: 5vw; /* Adjust icon size using vw */
+   margin-bottom: 1vh; /* Adjust margin using vh */
+}
+@media (max-width: 700px) {
+   .servicesSection {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      height: 100vh; /* Full height for centering */
+   }
+
+   .servicesGrid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* Allow wrapping for multiple items */
+      gap: 2vw; /* Adjust gap as needed */
+   }
+
+   .serviceCard {
+      width: 80vw; /* Adjust width for better fit on smaller screens */
+      margin: 1vh 0; /* Vertical spacing between cards */
+   }
+}
+
+.property-listings {
+   max-width: 100vw; /* 1200px is about 75vw on typical screens */
+   margin: auto;
+}
+
+h1 {
+   text-align: center;
+   margin-bottom: 2vh; /* 20px is about 2vh */
+}
+
+.filters {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2vh; /* 20px */
+}
+
+.filters select {
+   margin: 0 2vw; /* 10px is about 2vw */
+   padding: 1vh;
+   font-size: 2vw; /* 1em is roughly 2vw */
+}
+
+.listings {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around; /* Allows even spacing between items */
+}
+
+.listing {
+   background: white;
+   margin: 2vh; /* 15px is about 2vh */
+   padding: 1vh; /* 10px is about 1vh */
+   border: 1px solid #ccc;
+   border-radius: 1vh; /* 8px is about 1vh */
+   box-shadow: 2px 2px 2vh rgba(0, 0, 0, 0.1); /* 10px is about 2vh */
+   width: calc(30vw - 4vw); /* 3 listings per row */
+   box-sizing: border-box;
+   transition: transform 0.2s;
+}
+
+.listing:hover {
+   transform: scale(1.02);
+}
+
+.listing img {
+   width: 100%;
+   height: auto;
+   border-radius: 1vh 1vh 0 0; /* 8px is about 1vh */
+}
+
+h2 {
+   font-size: 2rem; /* 1.5em is roughly 3vw */
+   margin: 1vh 0; /* 10px is about 1vh */
+}
+
+p {
+   font-size: 1.3vw; /* 1em is roughly 2vw */
+   color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .listing {
+       width: calc(45vw - 4vw); /* 2 listings per row */
+   }
+   h2
+   {
+      font-size: 1.4rem;
+   }
+   p{
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 480px) {
+   .listing {
+       width: 90vw; /* 1 listing per row */
+   }
+   
+  
+}
+
+/* Testimonials.css */
+/* Testimonials.css */
+.testimonials-section {
+   padding: 2vh; /* 40px roughly equals 5vh for responsive design */
+   background-color: #f9f9f9;
+   text-align: center;
+ }
+ 
+ .testimonial-card {
+   padding: 2vh; /* 20px roughly equals 2vh */
+   border-radius: 1vh; /* 8px roughly equals 1vh */
+   background: white;
+   box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1); /* Adjusted shadow for consistency */
+ }
+ 
+ .testimonial-photo {
+   border-radius: 50%;
+   width: 12vw; /* Adjusted width for responsiveness */
+   height: 15vw; /* Adjusted height for responsiveness */
+  
+   object-fit: cover;
+   margin-bottom: 2vh; /* 15px roughly equals 2vh */
+ }
+ 
+ h2 {
+   margin-bottom: 2vh; /* 20px roughly equals 2vh */
+ }
+ 
+ html {
+   scroll-behavior: smooth;
+ }
+ 
